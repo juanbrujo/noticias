@@ -10,9 +10,9 @@ class Signal extends React.Component {
 
   render () {
     const { title, src } = this.props
-    return <div className="col-12 col-md-4 col-lg-4 contfill">
+    return <div className="col-6 col-md-4 col-lg-4 contfill">
       <div className="nombre">{title}</div>
-      <div className="embed-responsive embed-responsive-16by9">
+      <div className="embed-responsive embed-responsive-16by9 pad-10">
         <iframe
           src={src}
           title={_uniqueId('iframe-')}

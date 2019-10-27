@@ -33,8 +33,8 @@ class Clock extends React.Component {
           <span id="y">&nbsp;</span>
         </div>
         <div className="timetext">
-          <span id="h">&nbsp;</span> :
-          <span id="m">&nbsp;</span> :
+          <span id="h">&nbsp;</span>:
+          <span id="m">&nbsp;</span>:
           <span id="s">&nbsp;</span>
         </div>
       </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap');
+
 html,
 body {
   height: 100%;
@@ -5,9 +7,54 @@ body {
   overflow-x: hidden;
 }
 
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination.swiper-pagination-bullets {
+  display: none;
+}
+
+a.rss-link {
+  font-family: 'Asap Condensed', sans-serif;
+  display: block;
+  padding: 10px;
+  color: #ffcf77;
+  border: 1px solid orange;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 14px;
+  box-shadow: 0px 0px 5px 1px orange;
+  height: 200px;
+}
+
+a.rss-link img {
+  float: right;
+  width: 100px
+}
+
+a.rss-link .clear {
+  clear: both;
+}
+
+.rss-site {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pad-10 {
+  margin: 10px;
+}
+
 iframe {
   border-radius: 10px;
-  padding: 10px;
 }
 
 .container-fluid {
@@ -26,6 +73,18 @@ iframe {
 .timetext {
   font-family: 'LCDBOLD';
   font-size: 50px;
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  color: #5F5;
+  padding: 0px;
+  text-shadow: -2px -2px 4px #070, 2px -2px 4px #070, -2px 2px 4px #070, 2px 2px 4px #070;
+  -webkit-font-smoothing: antialiased;
+}
+
+.timetext-small {
+  font-family: 'LCDBOLD';
+  font-size: 14px;
   text-align: center;
   width: 100%;
   margin: 0px auto;

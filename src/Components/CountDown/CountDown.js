@@ -7,7 +7,7 @@ class CountDown extends React.PureComponent {
     super()
     this.divId = _uniqueId('countdown-')
     this.state = {
-      timeLeft: '00 : 00 : 00'
+      timeLeft: '0:00:00:00'
     }
   }
 
@@ -21,10 +21,15 @@ class CountDown extends React.PureComponent {
     setInterval(this.countDownClock, 1000)
   }
 
+  pad = (str, n) => {
+    for (var r = String(str); r.length < n; r = 0 + r);
+    return r
+  }
+
   countDownClock = () => {
     const { date, finish } = this.props
     var cnow = new Date().getTime()
-    var distance = new Date(date).getTime() - cnow
+    var distance = new Date(date).getTime() - cnow + 1000
     if (distance <= 0) {
       this.setState({
         timeLeft: finish
@@ -36,7 +41,7 @@ class CountDown extends React.PureComponent {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
     var seconds = Math.floor((distance % (1000 * 60)) / 1000)
     this.setState({
-      timeLeft: days + ' : ' + hours + ' : ' + minutes + ' : ' + seconds
+      timeLeft: days + ':' + this.pad(hours, 2) + ':' + this.pad(minutes, 2) + ':' + this.pad(seconds, 2)
     })
   }
 

@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Feed informativo tv y twitter
+
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/madkoding/noticias.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/noticias/alerts/)
+
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/madkoding/noticias.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/madkoding/noticias/context:javascript)
+
 
 ## Available Scripts
 
