@@ -4,19 +4,17 @@ import Clock from '../Clock/Clock'
 import Follow from '../Follow/Follow'
 import CountDown from '../CountDown/CountDown'
 import { Helmet } from 'react-helmet'
+import Feed from '../Feed/Feed'
 
 class App extends React.Component {
   constructor () {
     super()
     this.signals = [{
-      title: 'CAMARA PLAZA ITALIA - Galeria CIMA',
-      src: 'https://www.youtube.com/embed/DMaSEx506p0?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
-    }, {
       title: '24 Horas TVN',
       src: 'https://www.youtube.com/embed/g4599q5uxnM?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
     }, {
       title: 'T13',
-      src: 'https://www.youtube.com/embed/6554DE4Cp_w?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
+      src: 'https://www.youtube.com/embed/bOvhCYr1NYk?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
     }, {
       title: 'Meganoticias',
       src: 'https://www.youtube.com/embed/mvjj_ZEw384?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
@@ -27,6 +25,14 @@ class App extends React.Component {
       title: 'CNN Chile',
       src: 'https://www.youtube.com/embed/y5vvZ5gbF10?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
     }]
+    this.feeds = [
+      'https://rss.app/feeds/G7T7btEZ3kaIHrfj.xml',
+      'https://rss.app/feeds/cB5YJOsFis7lh7yb.xml',
+      'https://rss.app/feeds/PuWTsqczRrybKiWS.xml',
+      'https://rss.app/feeds/0uf5l2IhtBF9Qag8.xml',
+      'https://rss.app/feeds/o528mkszQo5rfGkv.xml',
+      'https://www.cooperativa.cl/noticias/site/tax/port/all/rss_3___1.xml'
+    ]
   }
 
   render () {
@@ -43,6 +49,7 @@ class App extends React.Component {
           <Follow />
           <CountDown title={'Marcha Martes 29'} date={'Oct 29, 2019 17:30:00'} finish={'00 : 00 : 00'} />
           {this.signals.map((signal, index) => <Signal key={index} title={signal.title} src={signal.src} />)}
+          {this.feeds.map((feed, index) => <Feed key={index} url={feed} />)}
         </div>
       </div>
     )
