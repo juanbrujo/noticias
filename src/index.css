@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+iframe {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container-fluid {
+  padding: 5px !important;
+}
+
+.datetext {
+  font: small-caps lighter 16px "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  color: #fff;
+  padding: 0px;
+}
+
+.timetext {
+  font-family: 'LCDBOLD';
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  color: #5F5;
+  padding: 0px;
+  text-shadow: -2px -2px 4px #070, 2px -2px 4px #070, -2px 2px 4px #070, 2px 2px 4px #070;
+  -webkit-font-smoothing: antialiased;
+}
+
+.red {
+  color: #F55 !important;
+  text-shadow: -2px -2px 4px #700, 2px -2px 4px #700, -2px 2px 4px #700, 2px 2px 4px #700;
+}
+
+.nombre {
+  font-family: 'LCDBOLD';
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: -2px -2px 4px #070, 2px -2px 4px #070, -2px 2px 4px #070, 2px 2px 4px #070;
+  -webkit-font-smoothing: antialiased;
+  color: #5F5;
+  padding: 3px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contfill {
+  position: relative;
+}
+
+.fill {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 100%;
+}
