@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import _uniqueId from 'lodash/uniqueId'
+import { utcToZonedTime } from 'date-fns-tz'
+import { getTime } from 'date-fns'
 
 class CountDown extends React.PureComponent {
   constructor () {
@@ -28,8 +30,14 @@ class CountDown extends React.PureComponent {
 
   countDownClock = () => {
     const { date, finish } = this.props
-    var cnow = new Date().getTime()
-    var distance = new Date(date).getTime() - cnow + 1000
+    const timeZone = 'America/Santiago'
+
+    const finishDate = new Date(date).toISOString()
+    const nowDate = new Date().toISOString()
+    const cnow = getTime(utcToZonedTime(nowDate, timeZone))
+    const cfinish = getTime(utcToZonedTime(finishDate, timeZone))
+
+    var distance = cfinish - cnow + 1000
     if (distance <= 0) {
       this.setState({
         timeLeft: finish

@@ -1,4 +1,5 @@
 import React from 'react'
+import { utcToZonedTime } from 'date-fns-tz'
 
 class Clock extends React.Component {
   pad = (str, n) => {
@@ -7,7 +8,9 @@ class Clock extends React.Component {
   }
 
   updateClock = () => {
-    var now = new Date()
+    const date = new Date().toISOString()
+    const timeZone = 'America/Santiago'
+    const now = utcToZonedTime(date, timeZone)
     var sec = now.getSeconds()
     var min = now.getMinutes()
     var hou = now.getHours()
