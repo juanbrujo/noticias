@@ -11,19 +11,19 @@ class App extends React.Component {
     super()
     this.signals = [{
       title: '24 Horas TVN',
-      src: 'https://www.youtube.com/embed/g4599q5uxnM?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
+      src: 'https://www.youtube.com/embed/g4599q5uxnM?autoplay=0&mute=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
     }, {
       title: 'T13',
-      src: 'https://www.youtube.com/embed/bOvhCYr1NYk?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
+      src: 'https://www.youtube.com/embed/bOvhCYr1NYk?autoplay=0&mute=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
     }, {
       title: 'Meganoticias',
-      src: 'https://www.youtube.com/embed/mvjj_ZEw384?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
+      src: 'https://www.youtube.com/embed/mvjj_ZEw384?autoplay=0&mute=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
     }, {
       title: 'CHV',
-      src: 'https://mdstrm.com/live-stream/5c6c302a414cc5496c9d7d79?jsapi=true&autoplay=true&volume=0'
+      src: 'https://mdstrm.com/live-stream/5c6c302a414cc5496c9d7d79?jsapi=true&autoplay=false&volume=100'
     }, {
       title: 'CNN Chile',
-      src: 'https://www.youtube.com/embed/y5vvZ5gbF10?autoplay=1&mute=1&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
+      src: 'https://www.youtube.com/embed/y5vvZ5gbF10?autoplay=0&mute=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
     }]
     this.feeds = [
       'https://rss.app/feeds/G7T7btEZ3kaIHrfj.xml',
