@@ -14,7 +14,7 @@ class Feed extends React.PureComponent {
       title: '',
       items: []
     }
-    this.corsProxy = 'https://cors-anywhere.herokuapp.com/'
+    this.corsProxy = 'https://proxy.serveruwu.com/'
   }
 
   static propTypes = {
