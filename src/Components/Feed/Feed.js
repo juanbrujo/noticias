@@ -23,7 +23,7 @@ class Feed extends React.PureComponent {
 
   componentDidMount = async () => {
     const { url } = this.props
-    const feed = await this.parser.parseURL(this.corsProxy + url)
+    const feed = await this.parser.parseURL(url)
     this.setState({
       site: feed.title,
       items: feed.items
