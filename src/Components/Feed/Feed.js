@@ -39,7 +39,7 @@ class Feed extends React.PureComponent {
     const elements = items.map((item, index) => {
       const image = _get(item, 'enclosure', {})
       const imageUrl = _get(image, 'url')
-      return <a className='rss-link' key={index} href={item.link}>
+      return <a className='rss-link' key={index} href={item.link} target="_blank" rel="noopener noreferrer">
         {imageUrl && <img src={imageUrl} alt="imagen"/>}
         <span className='text'>{this.renderDate(item.pubDate)} - {item.title}</span>
         <span className='clear' />
