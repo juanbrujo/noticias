@@ -28,18 +28,16 @@ class Clock extends React.Component {
   }
 
   render () {
-    return <div className="col-12 col-md-4 col-lg-4 no-gutters">
-      <div id="timedate">
-        <div className="datetext">
-          <span id="mon">&nbsp;</span>
-          <span id="d">&nbsp;</span>,
-          <span id="y">&nbsp;</span>
-        </div>
-        <div className="timetext">
-          <span id="h">&nbsp;</span>:
-          <span id="m">&nbsp;</span>:
-          <span id="s">&nbsp;</span>
-        </div>
+    return <div id="timedate">
+      <div className="datetext">
+        <span id="mon">&nbsp;</span>
+        <span id="d">&nbsp;</span>,
+        <span id="y">&nbsp;</span>
+      </div>
+      <div className="timetext">
+        <span id="h">&nbsp;</span>:
+        <span id="m">&nbsp;</span>:
+        <span id="s">&nbsp;</span>
       </div>
     </div>
   }

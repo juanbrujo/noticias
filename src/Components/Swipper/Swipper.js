@@ -15,14 +15,8 @@ class MySwiper extends Component {
     slides: PropTypes.array
   }
 
-  // componentWillMount () {
-  //   const { slides } = this.props
-  //   this.setState({ slides })
-  // }
-
   render () {
     const { slides } = this.props
-    console.log('TCL: MySwiper -> render -> slides', slides)
     return (
       <Swiper
         swiperOptions={{

@@ -56,11 +56,9 @@ class CountDown extends React.PureComponent {
   render () {
     const { title } = this.props
     const { timeLeft } = this.state
-    return <div className="col-12 col-md-4 col-lg-4">
-      <div id="countdown">
-        <div className="datetext">{title}</div>
-        <div id={this.divId} className="timetext red">{timeLeft}</div>
-      </div>
+    return <div id="countdown">
+      <div className="datetext">{title}</div>
+      <div id={this.divId} className="timetext red">{timeLeft}</div>
     </div>
   }
 }
