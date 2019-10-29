@@ -5,6 +5,7 @@ import Follow from '../Follow/Follow'
 import CountDown from '../CountDown/CountDown'
 import { Helmet } from 'react-helmet'
 import Feed from '../Feed/Feed'
+import Weather from '../Weather/Weather'
 
 class App extends React.Component {
   constructor () {
@@ -36,18 +37,20 @@ class App extends React.Component {
   }
 
   render () {
+    const headerClass = 'col-12 col-md-3 col-lg-3 no-gutters'
     return (
       <div className="container-fluid h-100">
         <Helmet>
           <meta charSet="utf-8" />
           <title>Informativo Chileno</title>
           <meta name="description" content="Informate de todas las señales de tv nacionales y de las noticias minuto a minuto" />
-          <link rel="canonical" href="http://madkoding.com/tv" />
+          <link rel="canonical" href="https://serveruwu.com/tv" />
         </Helmet>
         <div className="row h-100">
-          <Clock />
-          <Follow />
-          <CountDown title={'Marcha Martes 29'} date={'Oct 29, 2019 17:30:00'} finish={'00 : 00 : 00'} />
+          <div className={headerClass}><Clock /></div>
+          <div className={headerClass}><Follow /></div>
+          <div className={headerClass}><Weather /></div>
+          <div className={headerClass}><CountDown title={'Marcha Martes 29'} date={'Oct 29, 2019 17:30:00'} finish={'00 : 00 : 00'} /></div>
           {this.signals.map((signal, index) => <Signal key={index} title={signal.title} src={signal.src} />)}
           {this.feeds.map((feed, index) => <Feed key={index} url={feed} />)}
         </div>

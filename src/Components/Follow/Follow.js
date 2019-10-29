@@ -14,7 +14,7 @@ class Follow extends React.PureComponent {
       paddingTop: '10px'
     }
 
-    return <div className="col-12 col-md-4 col-lg-4" style={style}>
+    return <div style={style}>
       <a href="https://twitter.com/madKoding?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-show-count="false">Seguir a @madKoding</a>
       <br/>
       <a href="http://devschile.cl">
