@@ -14,7 +14,7 @@ class App extends React.Component {
       title: '24 Play',
       src: 'https://mdstrm.com/live-stream/57d1a22064f5d85712b20dab?jsapi=true&autoplay=false&volume=100'
     }, {
-      title: 'T13 Mobil',
+      title: 'T13 Móvil',
       src: 'https://www.youtube.com/embed/bOvhCYr1NYk?autoplay=0&mute=0&vq=medium&enablejsapi=1&modestbranding=1&showinfo=0'
     }, {
       title: 'CNN Chile',
